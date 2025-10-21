@@ -1,4 +1,4 @@
-package lab5;
+package B07Lab5;
 
 public class Rectangle {
 	Point A;
@@ -6,7 +6,7 @@ public class Rectangle {
 	Point C;
 	Point D;
 	
-	public Rectangle(Point A, Point B, Point C, Point C) {
+	public Rectangle(Point A, Point B, Point C, Point D) {
 		this.A = A;
 		this.B = B;
 		this.C = C;
@@ -22,7 +22,7 @@ public class Rectangle {
 		double dBC = B.distance(C);
 		double dCD = C.distance(D);
 		double dDA = D.distance(A);
-		if(dAB==dBC && dBC==dCA && dCA==dCD && dCD == dDA)
+		if(dAB==dBC && dBC==dCD && dCD == dDA)
 			return true;
 		else
 			return false;
